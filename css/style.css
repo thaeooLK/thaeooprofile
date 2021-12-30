@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+body{
+    font-family:  'Noto Serif', sans-serif;
+    margin: 0;
+}
+
+/* Start header */
+header{
+    height: 100vh;
+    background-image:linear-gradient(
+        rgba(49, 221, 230, 0.8),
+        rgba(0,0,0,0.3)
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+/* Start Navbar */
+.navbar{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+    padding: 20px 30px;
+    
+    transition: all 0.7s;
+}
+.navmenus{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+    padding: 5px 30px;
+}
+.menuitems{
+    color: #eee;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    transition: color 0.5s;
+}
+.menuitems:hover{
+    color: #1a99e8;
+}
+.lines1,.lines2,.lines3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+
+    transition: all 0.4s;
+}
+
+.changes .lines1{
+   transform: rotate(-45deg) translate(-5px,6px);
+}
+.changes .lines2{
+  opacity: 0;
+}
+.changes .lines3{
+ transform: rotate(45deg) translate(-5px,-6px);
+}
+/* End Navbar */
+
+/* Start Banner */
+    .banners{
+        width: 80%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%,-50%);
+    }
+
+    .bannerheaders{
+        animation-name: bnani;
+        animation-duration: 2s;
+    }
+
+
+
+    .bannerparagraphs{
+        animation-name: bnani;
+        animation-duration: 2s;
+        animation-delay: 0.5s;
+
+        animation-fill-mode: backwards;
+    }
+    @keyframes bnani{
+        0%{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translate(0);
+            opacity: 1;
+        }
+    }
+/* End Banner */
+
+
+/* End Header */
+
+/* start Mission Section */
+.works{
+    background:#d3deda;
+}
+
+.underlines{
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
+}
+
+.cameraimgs.fromlefts{
+  animation-name: myanifromleft;
+  animation-duration: 3s;
+}
+
+.missiontexts.fromrights{
+    animation-name: myanifromright;
+    animation-duration: 3s;
+}
+
+@keyframes myanifromleft{
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes myanifromright{
+    0%{
+           transform: translate(30px);
+           opacity: 0;
+    }
+    100%{
+      transform: translate(0);
+      opacity: 1;
+    }
+}
+
+/* End Mission Section */
+
+/* Start Collection section */
+.about{
+	background-color: #535c5a;
+	color: #e6e343;
+}
+
+/* End Collection section */
+
+
+/* STart skill section */
+.myskills{
+    width: 220px;
+    height: 230px;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    transition: all 0.7s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.myskills:hover{
+    transform: translateY(-20px);
+}
+
+
+/* End about me section */
+
+.works{
+	background-color:#535c5a; 
+}
+
+
+
+
+
+/* Start footer section */
+#contact{
+	 border-color: transparent;
+   
+}
+
+#contact a{
+    text-decoration: none;
+}
+
+.box1{
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid black;
+}
+
+.footers{
+    background:#535c5a;
+}
+  .footerlinks{
+      font-size: 13px;
+      color: #32edce;
+      text-decoration: none;
+
+      transition: all 0.3s;
+  }
+  .links{
+  	color: #15e653;
+  }
+
+  .footerlinks:hover{
+      color: #15a0eb;
+  }
+/* End footer section */
